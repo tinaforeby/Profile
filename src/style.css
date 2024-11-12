@@ -1,24 +1,74 @@
 /* Basic styles for the profile page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f2f5;
+    background-image: url("pexels-edward-jenner-4250573.jpg");
+    background-size: cover;
     }
 
 .profile-card {
-    background-color: #fff;
+    background: linear-gradient(to right, rgba(255, 253, 253, 0), rgba(253, 255, 254, 0.877));
+    display: flex;
+    flex-direction: row;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 300px;
-    text-align: right;
+    transition: transform 0.2s ease;
     }
 
+.profile-card:hover {
+    transform: scale(1.02);
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card .greeting {
+    margin: 10px 20px 10px 10px;
+}
+
+.greeting h1 {
+    margin-bottom: 0;
+}
+
+.greeting-text {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.off-age {
+    margin: 10px 20px 10px 10px;
+}
+
+.off-age p {
+    margin-bottom: 0;
+    font-size: large;
+}
+
+.occupation {
+    margin: 10px 20px 10px 10px;
+}
+
+.occupation p {
+    margin-bottom: 0;
+    font-size: large;
+}
+
+
 .hobbies {
-    border: black;
-    font-style: italic;
+    margin: 20px;
+    margin-top: 9%;
+    line-height: 23px;
+}
+
+.hobbies p {
+    font-size: large;
 }
